@@ -1,8 +1,10 @@
 .header {
+    z-index:10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: black;
-    color: whitesmoke;
+    color: #f5f5f5;
+    box-sizing: border-box;
 }

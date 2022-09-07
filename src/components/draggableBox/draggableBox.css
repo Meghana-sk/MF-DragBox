@@ -1,0 +1,31 @@
+.drag-container {
+    width: 15rem;
+    height: 10rem;
+    background-color:lightcoral;
+    padding: 0.5rem;
+    z-index: 5;
+    position: relative;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.position-label {
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+.dragme-label {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}

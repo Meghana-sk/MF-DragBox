@@ -1,11 +1,15 @@
 import "./App.css";
-import { Header, Footer } from "./components";
+import { Routes, Route } from "react-router-dom";
+import { MainPage, Page2 } from "./screens";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="*" element={<Page2 />} />
+      </Routes>
     </div>
   );
 }
