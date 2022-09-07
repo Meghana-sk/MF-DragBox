@@ -9,14 +9,12 @@ const DraggableBox = () => {
   const [showPosition, setShowPosition] = useState({ x: 0, y: 0 });
   const { boxPositionState, boxPositionChangeDispatch } = useBoxPosition();
   const updateBoxPosition = (data) => {
-    console.log(data);
     boxPositionChangeDispatch({
       type: OTHER_POSITION,
       payload: "other",
       values: { x: data.x, y: data.y },
     });
   };
-  console.log(boxPositionState, "--", showPosition);
   return (
     <>
       <div

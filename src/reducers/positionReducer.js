@@ -14,7 +14,6 @@ const positionReducer = (state, action) => {
         coordinates: { x: 0, y: 0 },
       };
     case OTHER_POSITION:
-      console.log("***", action.values);
       return { ...state, position: action.payload, coordinates: action.values };
     default:
       return state;

@@ -1,11 +1,10 @@
 import "./header.css";
+import { DigitalClock } from "../../components";
 import { useBoxPosition } from "../../context/boxPosition-context";
 import { CENTER, BOTTOM_RIGHT } from "../../variables/types";
 
 const Header = () => {
   const { boxPositionState, boxPositionChangeDispatch } = useBoxPosition();
-  const clock = new Date();
-  const date = `${clock.getHours()}:${clock.getMinutes()}:${clock.getSeconds()}`;
   return (
     <nav className="header">
       <h3>Position</h3>
@@ -41,7 +40,10 @@ const Header = () => {
         />
         <label htmlFor="position-lower-right">Lower right</label>
       </div>
-      <div>{date}</div>
+      <div className="key-instructions">
+        <span>Press ESC to hide floating block, Enter to show again</span>
+      </div>
+      <DigitalClock />
     </nav>
   );
 };

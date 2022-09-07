@@ -5,7 +5,6 @@ import { Header, Footer, DraggableBox } from "../components";
 const MainPage = () => {
   const [showFloatingBox, setShowFloatingBox] = useState(true);
   const escFunction = useCallback((event) => {
-    console.log(event);
     if (event.keyCode === 27) {
       setShowFloatingBox(false);
     }

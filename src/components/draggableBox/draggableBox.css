@@ -4,8 +4,8 @@
     background-color:lightcoral;
     padding: 0.5rem;
     z-index: 5;
+    position: relative;
 }
-
 
 .center {
     display: flex;
@@ -21,9 +21,11 @@
 
 .position-label {
     justify-content: flex-start;
+    font-weight: bold;
 }
 
 .dragme-label {
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
 }
