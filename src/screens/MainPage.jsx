@@ -1,3 +1,4 @@
+import "./screens-styles.css";
 import { useCallback, useState, useEffect } from "react";
 import { Header, Footer, DraggableBox } from "../components";
 
@@ -26,11 +27,12 @@ const MainPage = () => {
         <Header />
       </header>
       <main className="main-content">
+        <div className="display"></div>
         {showFloatingBox && <DraggableBox />}
       </main>
-      <footer className="footer-container">
+      <div className="footer-container">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 };

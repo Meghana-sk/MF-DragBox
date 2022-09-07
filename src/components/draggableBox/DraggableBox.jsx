@@ -32,13 +32,13 @@ const DraggableBox = () => {
           onStop={() => setShowPosition(boxPositionState.coordinates)}
         >
           <div className="drag drag-container">
-            <div className="drag">
+            <div className="position-label">
               {boxPositionState.position === "center" ||
               boxPositionState.position === "bottom-right"
                 ? boxPositionState.position
                 : "Floating..."}
             </div>
-            <div>Drag me around...</div>
+            <div className="dragme-label">Drag me around...</div>
           </div>
         </Draggable>
       </div>

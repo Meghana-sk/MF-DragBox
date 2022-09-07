@@ -1,8 +1,11 @@
 .drag-container {
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
     background-color:lightcoral;
+    padding: 0.5rem;
+    z-index: 5;
 }
+
 
 .center {
     display: flex;
@@ -12,6 +15,15 @@
 
 .bottom-right {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.position-label {
+    justify-content: flex-start;
+}
+
+.dragme-label {
     justify-content: flex-end;
     align-items: flex-end;
 }
