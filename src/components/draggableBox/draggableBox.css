@@ -1,0 +1,17 @@
+.drag-container {
+    width: 20rem;
+    height: 10rem;
+    background-color:lightcoral;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

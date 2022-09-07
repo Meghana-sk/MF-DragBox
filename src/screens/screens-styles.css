@@ -1,0 +1,28 @@
+.page-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 4rem auto 4rem;
+    grid-template-areas: 
+                    "nav"
+                    "main"
+                    "footer";
+}
+
+.header-container {
+    grid-area: nav;
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+}
+
+.footer-container {
+    grid-area: footer;
+}
+
+.drag-box {
+    grid-area: 1/1/3/3;
+}
